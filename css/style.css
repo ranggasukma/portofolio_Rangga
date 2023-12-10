@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+header {
+    height: 70px;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+
+header h1 a:hover {
+    color: #F84744;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    padding: 24px;
+    display: inline-block;
+}
+
+header ul li a:hover {
+    color: #F84744;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container ::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(16, 47, 80, .9);
+    transition: .3s;
+}
+
+.sidebar ul li a {
+    color: #fff;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: 3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #F84744;
+}
+
+#check:checked~.sidebar {
+    left: 0;
+}
+
+.banner {
+    background-color: #1F68B6;
+    padding: 150px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.banner img {
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ddd;
+    margin-bottom: 10px;
+}
+
+.banner h2, .banner p, .banner span {
+    color: #fff;
+}
+
+.banner h2 {
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 18px;
+}
+
+.banner-left {
+    padding-left: 24px;
+}
+
+section h3 {
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+section h3::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 1px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+
+section h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: #F84744;
+    left: calc(50% - 20px);
+}
+
+#about p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+
+.html{
+    width: 100%;
+}
+
+.css {
+    width: 90%;
+}
+
+.js {
+    width: 80%;
+}
+.php {
+    width: 95%;
+}
+
+.ps {
+    width: 85%;
+}
+
+.col-4 {
+    width: 30%;
+    height: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+}
+
+.col-4 img{
+    width: 100%;
+    
+}
+
+#portofolio {
+    background-color: #f9f9f9;
+    margin: 4em 0;
+    position: relative;
+}
+
+#portofolio img{
+	 height: 15rem;
+	 width: 100%;
+	 margin: 1em;
+
+}
+
+#blog{
+	margin: 4em 0;
+	position: relative;	
+}
+#blog h1{
+	color:#F97300;
+	margin: 2em;	
+}
+#blog .card{
+	box-shadow: 0 0 20px #ccc;
+}
+#blog .card img{
+	width: 100%;
+	height: 12em;
+}
+
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    header ul {
+        display: none;
+    }
+    #blog .card-title{
+        color:#F97300;
+         
+    }
+    #blog .card-body{
+        padding: 1em;
+    }
+
+    #team .item img{
+        width: 100%;
+    }
+
+    #team{
+        margin: 4em 0;
+        position: relative;
+    
+    }
+    #team h1{
+        color:#F97300;
+        margin: 2em;	
+    }
+    #team .item{
+        position: relative;
+        overflow: hidden;	
+    }
+    #team .des{
+        background: #F97300;
+        color: #fff;
+        text-align: center;
+        border-top-right-radius: 93%;
+        transition:.3s ease-in-out;
+        position: absolute;
+        width: 88%;
+        bottom: 24px;
+    
+    
+    }
+    #team .item:hover .des{
+        height: 100%;
+        background:#f973007d;
+        position: absolute;
+        width: 89%;
+        padding: 5em;
+        top: 0;
+        border-top-right-radius: 0;
+    }
+
+    #contact-form{
+        margin: 6em 0;
+        position: relative;		
+    }
+    
+    #contact-form h1{
+        padding:2em 1px;
+        color: #F97300; 
+    }
+    #contact-form .right{
+        max-width: 600px;
+    }
+    #contact-form .right .btn-secondary{
+        background:  #F97300;
+        color: #fff;
+        border:0;
+    }
+    #contact-form .right .form-control::placeholder{
+        color: #888;
+        font-size: 16px;
+    }
+
+    footer{
+        background-color: #333;
+        padding: 30px;
+        text-align: center;
+    }
+
+    footer small{
+        color: #fff;
+    }
+}
